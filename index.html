@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AccraGrid-AI | Tech Hub Africa Hackathon 2026 ($1,000 Cash) Smart City Command Center</title>
+  <style>
+    :root {
+      --bg: #07120e;
+      --panel: #0e221b;
+      --border: #1e4b3b;
+      --gold: #fcd116;
+      --green: #00d285;
+      --red: #ff4d5e;
+      --text: #eef9f4;
+      --muted: #93bfb0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: radial-gradient(circle at top left, #123326, var(--bg) 65%);
+      color: var(--text);
+      padding: 24px;
+      line-height: 1.5;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 20px 24px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(252, 209, 22, 0.16);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card h2 {
+      font-size: 17px;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 13.5px;
+    }
+    .ok { color: var(--green); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <span class="badge">TECH HUB AFRICA HACKATHON 2026 ($1,000 USD CASH | 0 BUIDLs | ID #1898)</span>
+      <h1 style="margin-top:8px;font-size:24px;">AccraGrid-AI: Tri-Pillar Electricity, Traffic &amp; Pollution Digital Twin for Ghana</h1>
+      <p style="color:var(--muted);font-size:14px;">IBM Watsonx.ai • AWS IoT Greengrass • Azure IoT Edge • Google Maps Platform • NVIDIA Metropolis</p>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h2>⚡ Pillar 1: Electricity Efficiency <span>AWS Greengrass + Azure IoT</span></h2>
+      <div class="stat-row"><span>East Legon 33/11kV Feeder</span><span class="ok">Loss: 19.4% &rarr; 11.2%</span></div>
+      <div class="stat-row"><span>Tema Industrial 33kV Feeder</span><span class="ok">Loss: 17.8% &rarr; 10.4%</span></div>
+      <div class="stat-row"><span>Daily Grid Losses Saved</span><span class="ok">10,547.3 kWh / day</span></div>
+      <div class="stat-row"><span>Annual ECG Cost Savings</span><span>GHS 8,277,018.68 / yr</span></div>
+    </div>
+
+    <div class="card">
+      <h2>🚦 Pillar 2: Traffic Mitigation <span>NVIDIA Metropolis + Google Maps</span></h2>
+      <div class="stat-row"><span>Kwame Nkrumah Interchange</span><span class="ok">194s &rarr; 124s (-36.08%)</span></div>
+      <div class="stat-row"><span>Spintex Rd / Flower Pot</span><span class="ok">228s &rarr; 146.5s (-35.75%)</span></div>
+      <div class="stat-row"><span>N1 Highway (Achimota)</span><span class="ok">165s &rarr; 111s (-32.73%)</span></div>
+      <div class="stat-row"><span>Mean Commute Wait Reduction</span><span class="ok">-34.85% Across Accra</span></div>
+    </div>
+
+    <div class="card">
+      <h2>🌱 Pillar 3: Pollution Control <span>IBM Watsonx + Edge AQI</span></h2>
+      <div class="stat-row"><span>Agbogbloshie Corridor PM2.5</span><span class="ok">142.5 &rarr; 54.0 &mu;g/m&sup3;</span></div>
+      <div class="stat-row"><span>Tema Port Downwind PM2.5</span><span class="ok">88.2 &rarr; 41.5 &mu;g/m&sup3;</span></div>
+      <div class="stat-row"><span>Mean PM2.5 Plume Reduction</span><span class="ok">-57.52% Verified</span></div>
+      <div class="stat-row"><span>Diesel Gensets Displaced</span><span>18 Units via Solar BESS</span></div>
+    </div>
+  </div>
+</body>
+</html>

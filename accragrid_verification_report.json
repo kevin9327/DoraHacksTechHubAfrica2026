@@ -1,0 +1,90 @@
+{
+  "project": "AccraGrid-AI: Tri-Pillar Smart Microgrid, Adaptive Traffic Signal & Pollution Digital Twin",
+  "competition": "Hackathon 2026 Challenge — Tech Hub Africa Hackathon 2026 ($1,000 USD Cash, 0 BUIDLs)",
+  "hackathon_url": "https://dorahacks.io/hackathon/hackathon2026challenge/detail",
+  "all_pillars_passed": true,
+  "pillar_1_electricity": {
+    "pillar": "Pillar 1: Electricity Efficiency",
+    "edge_stack": "AWS IoT Greengrass v2 + Azure IoT Edge Smart Meter Telemetry",
+    "feeders_optimized": 2,
+    "daily_grid_losses_prevented_kwh": 10547.2,
+    "annual_ghs_cost_savings": 8276915.2,
+    "feeder_metrics": [
+      {
+        "feeder_id": "ECG-ACCRA-01 (East Legon 33/11kV)",
+        "baseline_peak_kw": 4850.0,
+        "solar_pv_kw": 1420.0,
+        "bess_discharge_kw": 680.0,
+        "baseline_line_loss_pct": 19.4,
+        "optimized_line_loss_pct": 11.2,
+        "daily_energy_saved_kwh": 4175.8
+      },
+      {
+        "feeder_id": "ECG-TEMA-02 (Industrial Free Zone 33kV)",
+        "baseline_peak_kw": 8200.0,
+        "solar_pv_kw": 2650.0,
+        "bess_discharge_kw": 1150.0,
+        "baseline_line_loss_pct": 17.8,
+        "optimized_line_loss_pct": 10.4,
+        "daily_energy_saved_kwh": 6371.4
+      }
+    ],
+    "passed": true
+  },
+  "pillar_2_traffic": {
+    "pillar": "Pillar 2: Traffic Mitigation",
+    "vision_and_routing_stack": "NVIDIA Metropolis DeepStream YOLOv10 + Google Maps Routes API",
+    "corridors_monitored": 3,
+    "average_commute_delay_reduction_pct": 34.85,
+    "corridor_telemetry": [
+      {
+        "corridor": "Kwame Nkrumah Interchange (Circle)",
+        "baseline_wait_sec": 194.0,
+        "trotro_priority_green_sec": 58,
+        "optimized_wait_sec": 124.0,
+        "delay_reduction_pct": 36.08
+      },
+      {
+        "corridor": "Spintex Road / Flower Pot Junction",
+        "baseline_wait_sec": 228.0,
+        "trotro_priority_green_sec": 64,
+        "optimized_wait_sec": 146.5,
+        "delay_reduction_pct": 35.75
+      },
+      {
+        "corridor": "N1 George Walker Bush Highway (Achimota)",
+        "baseline_wait_sec": 165.0,
+        "trotro_priority_green_sec": 52,
+        "optimized_wait_sec": 111.0,
+        "delay_reduction_pct": 32.73
+      }
+    ],
+    "passed": true
+  },
+  "pillar_3_pollution": {
+    "pillar": "Pillar 3: Pollution Control",
+    "ai_reasoning_stack": "IBM Watsonx.ai Foundation Model Policy Engine + Gaussian Plume Dispersion Solver",
+    "zones_monitored": 2,
+    "mean_pm25_reduction_pct": 57.52,
+    "zone_interventions": [
+      {
+        "zone": "Agbogbloshie Urban Corridor (Accra)",
+        "pm25_ug_m3_observed": 142.5,
+        "who_24h_guideline_ug_m3": 15.0,
+        "source_attribution": "Open thermal cable burning & diesel generator clusters",
+        "watsonx_mitigation_action": "Dispatch mobile EPA enforcement unit + shift microgrid to solar BESS to halt 18 diesel gensets",
+        "projected_pm25_after_intervention": 54.0
+      },
+      {
+        "zone": "Tema Harbour & Refinery Downwind Sector",
+        "pm25_ug_m3_observed": 88.2,
+        "who_24h_guideline_ug_m3": 15.0,
+        "source_attribution": "Heavy freight idling at port gate + stack emissions",
+        "watsonx_mitigation_action": "Activate green-wave freight slot scheduling via Google Maps + scrubber alert",
+        "projected_pm25_after_intervention": 41.5
+      }
+    ],
+    "passed": true
+  },
+  "banner_png_bytes": 22789
+}
